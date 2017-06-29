@@ -1,0 +1,40 @@
+﻿<Window x:Class="Folder_Sync.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Folder_Sync"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Title="Folders Sync" Height="350" Width="525">
+   
+    <DockPanel LastChildFill="False">
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Edit">
+                <MenuItem Header="Text"/>
+            </MenuItem>
+            <MenuItem Header="Delete"/>
+
+        </Menu>
+        <Line Height="5" DockPanel.Dock="Top"></Line>
+        
+        <StatusBar DockPanel.Dock="Bottom" >
+            <Label>Text</Label>
+        </StatusBar>
+        <Grid DockPanel.Dock="Left">
+        <ListBox  >
+
+            <ListBoxItem Content="Folder 1"/>
+            <ListBoxItem Content="Folder 2"/>
+            <ListBoxItem Content="Folder 555"/>
+        </ListBox>
+        </Grid>
+        
+        <Grid DockPanel.Dock="Left">
+            <Label>text</Label>
+        </Grid>
+
+        
+
+    </DockPanel>
+</Window>
